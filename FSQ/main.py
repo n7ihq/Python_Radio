@@ -4,7 +4,7 @@ from time import sleep
 # FLDIGI knows these baud rates: 1.5, 2, 3, 4.5, 6
 
 def main():
-  fsq = FSQConfig(7040000, 12, "AB6NY", "CM87xe")
+  fsq = FSQConfig(7040000, 6, "AB6NY", "CM87xe")
 
   while True:
     fsq.set_message("{} Testing from {} using a Raspberry Pi Pico RP2040")
