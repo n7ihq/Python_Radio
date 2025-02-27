@@ -10,7 +10,7 @@ class FSQConfig:
     self.mycall = call
     self.location = location
 
-    self.r = FSQ(self.send_tone, self.baud, self.all_done)
+    self.r = FSQ(self.baud, self.send_tone, self.all_done)
     self.dds = Radio()
     self.dds.send()
 
